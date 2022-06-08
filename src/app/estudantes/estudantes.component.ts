@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { EstudanteService } from '../shared/estudante.service';
 import { Estudante } from './../shared/estudante';
-import { MessageService } from './../shared/message.service';
 
 @Component({
   selector: 'app-estudantes',
@@ -14,7 +13,7 @@ export class EstudantesComponent implements OnInit {
   estudantes: Estudante[] = [];
   selectedEstudante?: Estudante;
 
-  constructor(private estudanteService: EstudanteService, private messageService: MessageService) { }
+  constructor(private estudanteService: EstudanteService) { }
 
   ngOnInit(): void {
     this.getEstudantes();
@@ -22,7 +21,6 @@ export class EstudantesComponent implements OnInit {
 
   onSelect(estudante: Estudante): void {
     this.selectedEstudante = estudante;
-    this.messageService.add(`Estudante ${estudante.nome} selecionado!`);
   }
 
   getEstudantes(): void {

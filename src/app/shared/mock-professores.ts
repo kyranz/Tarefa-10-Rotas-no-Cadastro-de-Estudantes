@@ -1,13 +1,15 @@
 import { Professor } from './professor';
 
+let id = 0;
+
 export const PROFESSORES: Professor[] = [
-  { id: 1, nome: 'Pedro', curso: "ads", matricula: 563 },
-  { id: 2, nome: 'Jorge', curso: "ads", matricula: 221 },
-  { id: 4, nome: 'Marquinhos', curso: "ads", matricula: 171 },
-  { id: 5, nome: 'Maria', curso: "ads", matricula: 300 },
-  { id: 6, nome: 'Bruna', curso: "ads", matricula: 438 },
-  { id: 7, nome: 'Thiago', curso: "ads", matricula: 816 },
-  { id: 8, nome: 'Vitor', curso: "ads", matricula: 219 },
-  { id: 9, nome: 'Rafaela', curso: "ads", matricula: 138 },
-  { id: 10, nome: 'Paula', curso: "ads", matricula: 993 }
+  { id: ++id, nome: 'Pedro Pedrada Pedroso', curso: "Análise e Desenvolvimento de Sistemas", matricula: 563 },
+  { id: ++id, nome: 'Jorge Amado', curso: "Análise e Desenvolvimento de Sistemas", matricula: 221 },
+  { id: ++id, nome: 'Marquinhos da Silva', curso: "Análise e Desenvolvimento de Sistemas", matricula: 171 },
+  { id: ++id, nome: 'Maria Antonieta', curso: "Análise e Desenvolvimento de Sistemas", matricula: 300 },
+  { id: ++id, nome: 'Bruna Melare', curso: "Análise e Desenvolvimento de Sistemas", matricula: 438 },
+  { id: ++id, nome: 'Thiago Silva', curso: "Mecatrônica Industrial", matricula: 816 },
+  { id: ++id, nome: 'Vitor Oliveira', curso: "Mecatrônica Industrial", matricula: 219 },
+  { id: ++id, nome: 'Rafaela Anciã', curso: "Mecatrônica Industrial", matricula: 138 },
+  { id: ++id, nome: 'Paula Tejando', curso: "Mecatrônica Industrial", matricula: 993 }
 ];

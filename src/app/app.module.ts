@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EstudanteDetailComponent } from './estudantes/estudante-detail/estudante-detail.component';
 import { EstudantesComponent } from './estudantes/estudantes.component';
-import { MessagesComponent } from './messages/messages.component';
 import { ProfessorDetailComponent } from './professores/professor-detail/professor-detail.component';
 import { ProfessoresComponent } from './professores/professores.component';
 import { TopoComponent } from './topo/topo.component';
@@ -16,7 +15,6 @@ import { TopoComponent } from './topo/topo.component';
     AppComponent,
     EstudantesComponent,
     EstudanteDetailComponent,
-    MessagesComponent,
     TopoComponent,
     ProfessoresComponent,
     ProfessorDetailComponent
