@@ -1,0 +1,13 @@
+<div class="container my-4">
+  <h3>Dados</h3>
+
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let professor of professores">
+      <div [class.selected]="professor === selectedProfessor" (click)="onSelect(professor)">     
+        <span class="badge bg-success">{{professor.id}}</span> {{professor.nome}}
+      </div>
+    </li>
+  </ul>
+  
+  <app-professor-detail [professor]="selectedProfessor"></app-professor-detail>
+</div>
